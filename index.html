@@ -21,6 +21,8 @@
               navBackground: "rgba(16, 144, 216, 0.1)",
               btnBackground: "#1090D8",
               inputBackground: "#F1F1F1",
+              triangleBg: "#FBBCED",
+              rhombusBg: "#69C7F0",
             },
             fontFamily: {
               inter: ["Inter", "sans-serif"],
@@ -55,7 +57,9 @@
       <section class="mx-12">
         <div class="grid grid-cols-4 gap-6">
           <!-- triangle div-->
-          <div class="border-2 flex flex-col items-center p-8">
+          <div
+            class="border-2 flex flex-col items-center bg-triangleBg p-8 rounded-lg"
+          >
             <img src="images/triangle.png" alt="" />
             <h3 class="font-inter font-bold text-2xl mt-8 mb-2">Triangle</h3>
             <p>Area(A) = 0.5 x b x h</p>
@@ -81,7 +85,7 @@
             </button>
           </div>
           <!-- rectangle div -->
-          <div class="border-2 flex flex-col items-center p-8">
+          <div class="border-2 flex flex-col items-center p-8 rounded-lg">
             <img src="images/rectangle.png" alt="" />
             <h3 class="font-inter font-bold text-2xl mt-14 mb-2">Rectangle</h3>
             <p>Area(A) = w x l</p>
@@ -107,7 +111,7 @@
             </button>
           </div>
           <!-- parallelogram div -->
-          <div class="border-2 flex flex-col items-center p-8">
+          <div class="border-2 flex flex-col items-center p-8 rounded-lg">
             <img src="images/parallelogram.png" alt="" />
             <h3 class="font-inter font-bold text-2xl mt-20 mb-2">
               Parallelogram
@@ -124,7 +128,7 @@
             </button>
           </div>
           <!-- area calculation -->
-          <div class="border-2">
+          <div class="border-2 rounded-lg">
             <h4
               class="font-inter font-bold text-xl text-center mt-5 underline underline-offset-4"
             >
@@ -134,8 +138,56 @@
         </div>
       </section>
       <!-- section with rhombus,pentagon,ellipse -->
-      <section>
-        <div></div>
+      <section class="mx-12 mt-3 mb-10">
+        <div class="grid grid-cols-4 gap-6">
+          <!-- rhombus div -->
+          <div
+            class="border-2 flex flex-col items-center p-8 rounded-lg bg-rhombusBg"
+          >
+            <img src="images/rhombus.png" alt="" />
+            <h3 class="font-inter font-bold text-2xl mt-8 mb-2">Rhombus</h3>
+            <p>Area(A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
+            <div class="my-5 font-inter font-normal text-xl">
+              d<sub>1</sub>=<span>16</span>cm, d<sub>2</sub>=<span>8</span>cm
+            </div>
+            <!-- calculate button -->
+            <button
+              class="bg-btnBackground w-full px-12 py-4 font-inter text-xl font-bold text-white rounded-lg"
+            >
+              Calculate
+            </button>
+          </div>
+          <!-- pentagon div -->
+          <div class="border-2 flex flex-col items-center p-8 rounded-lg">
+            <img src="images/pentagon.png" alt="" />
+            <h3 class="font-inter font-bold text-2xl mt-10 mb-2">Pentagon</h3>
+            <p>Area(A) = 0.5 x p x b</p>
+            <div class="my-5 font-inter font-normal text-xl">
+              p=<span>6</span>cm, b=<span>10</span>cm
+            </div>
+            <!-- calculate button -->
+            <button
+              class="bg-btnBackground w-full px-12 py-4 font-inter text-xl font-bold text-white rounded-lg"
+            >
+              Calculate
+            </button>
+          </div>
+          <!-- ellipse div -->
+          <div class="border-2 flex flex-col items-center p-8 rounded-lg">
+            <img src="images/ellipse.png" alt="" />
+            <h3 class="font-inter font-bold text-2xl mt-16 mb-2">Ellipse</h3>
+            <p>Area(A) = πab</p>
+            <div class="my-5 font-inter font-normal text-xl">
+              a=<span>10</span>cm, b=<span>4</span>cm
+            </div>
+            <!-- calculate button -->
+            <button
+              class="bg-btnBackground w-full px-12 py-4 font-inter text-xl font-bold text-white rounded-lg"
+            >
+              Calculate
+            </button>
+          </div>
+        </div>
       </section>
     </main>
   </body>

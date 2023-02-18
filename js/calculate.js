@@ -5,6 +5,13 @@ document.getElementById("btn-triangle").addEventListener("click", function () {
   const triangleArea = 0.5 * triangle;
   const triangleAreaString = triangleArea.toFixed(2);
   const area = parseFloat(triangleAreaString);
+
+  const triangleDisplay = document.getElementById("triangle-display");
+  if (isNaN(area)) {
+    triangleDisplay.style.display = "none";
+  } else {
+    triangleDisplay.style.display = "block";
+  }
   //set value
   setValueById("triangle-area", area);
 });
@@ -12,6 +19,12 @@ document.getElementById("btn-triangle").addEventListener("click", function () {
 // for rectangle
 document.getElementById("btn-rectangle").addEventListener("click", function () {
   const rectangle = getValueById("rectangle-w", "rectangle-l");
+  const rectangleDisplay = document.getElementById("rectangle-display");
+  if (isNaN(rectangle)) {
+    rectangleDisplay.style.display = "none";
+  } else {
+    rectangleDisplay.style.display = "block";
+  }
   setValueById("rectangle-area", rectangle);
 });
 // ----------
@@ -20,6 +33,14 @@ document
   .getElementById("btn-parallelogram")
   .addEventListener("click", function () {
     const parallelogram = getValueById("parallelogram-b", "parallelogram-h");
+    const parallelogramDisplay = document.getElementById(
+      "parallelogram-display"
+    );
+    if (isNaN(parallelogram)) {
+      parallelogramDisplay.style.display = "none";
+    } else {
+      parallelogramDisplay.style.display = "block";
+    }
     setValueById("parallelogram-area", parallelogram);
   });
 //   ----------
@@ -29,6 +50,13 @@ document.getElementById("btn-rhombus").addEventListener("click", function () {
   const rhombusArea = 0.5 * rhombus;
   const rhombusAreaString = rhombusArea.toFixed(2);
   const area = parseFloat(rhombusAreaString);
+
+  const rhombusDisplay = document.getElementById("rhombus-display");
+  if (isNaN(area)) {
+    rhombusDisplay.style.display = "none";
+  } else {
+    rhombusDisplay.style.display = "block";
+  }
   //   set value
   setValueById("rhombus-area", area);
 });
@@ -39,6 +67,13 @@ document.getElementById("btn-pentagon").addEventListener("click", function () {
   const pentagonArea = 0.5 * pentagon;
   const pentagonAreaString = pentagonArea.toFixed(2);
   const area = parseFloat(pentagonAreaString);
+
+  const pentagonDisplay = document.getElementById("pentagon-display");
+  if (isNaN(area)) {
+    pentagonDisplay.style.display = "none";
+  } else {
+    pentagonDisplay.style.display = "block";
+  }
   //   set value
   setValueById("pentagon-area", area);
 });
@@ -49,6 +84,13 @@ document.getElementById("btn-ellipse").addEventListener("click", function () {
   const ellipseArea = 3.14 * ellipse;
   const ellipseAreaString = ellipseArea.toFixed(2);
   const area = parseFloat(ellipseAreaString);
+
+  const ellipseDisplay = document.getElementById("ellippse-display");
+  if (isNaN(area)) {
+    ellipseDisplay.style.display = "none";
+  } else {
+    ellipseDisplay.style.display = "block";
+  }
   //   set value
   setValueById("ellipse-area", area);
 });

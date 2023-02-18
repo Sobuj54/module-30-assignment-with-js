@@ -162,25 +162,23 @@
             <!-- ordered list -->
             <ol class="mt-4 w-5/6 mx-auto list-decimal list-inside">
               <!-- triangle list -->
-              <li>
-                Triangle <span id="triangle-area" class="ml-9">0</span>cm<sup
-                  >2</sup
-                >
+              <li id="triangle-display" class="hidden">
+                Triangle
+                <span id="triangle-area" class="ml-9">0</span>cm<sup>2</sup>
                 <button class="bg-btnBackground px-2 py-0 text-white rounded">
                   convert to m<sup>2</sup>
                 </button>
               </li>
               <!-- rectangle list -->
-              <li class="mt-2">
-                Rectangle <span id="rectangle-area" class="ml-7">0</span>cm<sup
-                  >2</sup
-                >
+              <li id="rectangle-display" class="mt-2 hidden">
+                Rectangle
+                <span id="rectangle-area" class="ml-7">0</span>cm<sup>2</sup>
                 <button class="bg-btnBackground px-2 py-0 text-white rounded">
                   convert to m<sup>2</sup>
                 </button>
               </li>
               <!-- parallelogram list -->
-              <li class="mt-2">
+              <li id="parallelogram-display" class="mt-2 hidden">
                 Parallelogram
                 <span id="parallelogram-area" class="ml-1">0</span>cm<sup
                   >2</sup
@@ -190,7 +188,7 @@
                 </button>
               </li>
               <!-- rhombus list -->
-              <li class="mt-2">
+              <li id="rhombus-display" class="mt-2 hidden">
                 Rhombus <span id="rhombus-area" class="ml-8">0</span>cm<sup
                   >2</sup
                 >
@@ -199,7 +197,7 @@
                 </button>
               </li>
               <!-- pentagon list -->
-              <li class="mt-2">
+              <li id="pentagon-display" class="mt-2 hidden">
                 Pentagon <span id="pentagon-area" class="ml-8">0</span>cm<sup
                   >2</sup
                 >
@@ -208,7 +206,7 @@
                 </button>
               </li>
               <!-- ellipse list -->
-              <li class="mt-2">
+              <li id="ellippse-display" class="mt-2 hidden">
                 Ellipse <span id="ellipse-area" class="ml-12">0</span>cm<sup
                   >2</sup
                 >
@@ -317,5 +315,6 @@
     <script src="js/utilities.js"></script>
     <script src="js/calculate.js"></script>
     <script src="js/connection.js"></script>
+    <script src="js/randomColor.js"></script>
   </body>
 </html>

@@ -65,12 +65,14 @@
             <p>Area(A) = 0.5 x b x h</p>
             <div class="my-5">
               <input
+                id="triangle-b"
                 class="bg-inputBackground px-2 py-1 mr-2 w-20"
                 type="text"
                 placeholder="b"
               />
               <span class="font-inter font-normal text-base">cm</span>
               <input
+                id="triangle-h"
                 class="bg-inputBackground px-2 py-1 mx-2 w-20"
                 type="text"
                 placeholder="h"
@@ -79,6 +81,7 @@
             </div>
             <!-- calculate button -->
             <button
+              id="btn-triangle"
               class="bg-btnBackground w-full px-12 py-4 font-inter text-xl font-bold text-white rounded-lg"
             >
               Calculate
@@ -93,12 +96,14 @@
             <p>Area(A) = w x l</p>
             <div class="my-5">
               <input
+                id="rectangle-w"
                 class="bg-inputBackground px-2 py-1 mr-2 w-20"
                 type="text"
                 placeholder="w"
               />
               <span class="font-inter font-normal text-base">cm</span>
               <input
+                id="rectangle-l"
                 class="bg-inputBackground px-2 py-1 mx-2 w-20"
                 type="text"
                 placeholder="l"
@@ -107,6 +112,7 @@
             </div>
             <!-- calculate button -->
             <button
+              id="btn-rectangle"
               class="bg-btnBackground w-full px-12 py-4 font-inter text-xl font-bold text-white rounded-lg"
             >
               Calculate
@@ -123,12 +129,14 @@
             <p>Area(A) = b x h</p>
             <div class="my-5">
               <input
+                id="parallelogram-b"
                 class="bg-inputBackground px-2 py-1 mr-2 w-20"
                 type="text"
                 placeholder="b"
               />
               <span class="font-inter font-normal text-base">cm</span>
               <input
+                id="parallelogram-h"
                 class="bg-inputBackground px-2 py-1 mx-2 w-20"
                 type="text"
                 placeholder="h"
@@ -137,6 +145,7 @@
             </div>
             <!-- calculate button -->
             <button
+              id="btn-parallelogram"
               class="bg-btnBackground w-full px-12 py-4 font-inter text-xl font-bold text-white rounded-lg"
             >
               Calculate
@@ -153,42 +162,55 @@
             <ol class="mt-4 w-5/6 mx-auto list-decimal list-inside">
               <!-- triangle list -->
               <li>
-                Triangle <span class="ml-11">0</span>cm<sup>2</sup>
+                Triangle <span id="triangle-area" class="ml-9">0</span>cm<sup
+                  >2</sup
+                >
                 <button class="bg-btnBackground px-2 py-0 text-white rounded">
                   convert to m<sup>2</sup>
                 </button>
               </li>
               <!-- rectangle list -->
               <li class="mt-2">
-                Rectangle <span class="ml-7">0</span>cm<sup>2</sup>
+                Rectangle <span id="rectangle-area" class="ml-7">0</span>cm<sup
+                  >2</sup
+                >
                 <button class="bg-btnBackground px-2 py-0 text-white rounded">
                   convert to m<sup>2</sup>
                 </button>
               </li>
               <!-- parallelogram list -->
               <li class="mt-2">
-                Parallelogram <span class="ml-1">0</span>cm<sup>2</sup>
+                Parallelogram
+                <span id="parallelogram-area" class="ml-1">0</span>cm<sup
+                  >2</sup
+                >
                 <button class="bg-btnBackground px-2 py-0 text-white rounded">
                   convert to m<sup>2</sup>
                 </button>
               </li>
               <!-- rhombus list -->
               <li class="mt-2">
-                Rhombus <span class="ml-8">0</span>cm<sup>2</sup>
+                Rhombus <span id="rhombus-area" class="ml-8">0</span>cm<sup
+                  >2</sup
+                >
                 <button class="bg-btnBackground px-2 py-0 text-white rounded">
                   convert to m<sup>2</sup>
                 </button>
               </li>
               <!-- pentagon list -->
               <li class="mt-2">
-                Pentagon <span class="ml-8">0</span>cm<sup>2</sup>
+                Pentagon <span id="pentagon-area" class="ml-8">0</span>cm<sup
+                  >2</sup
+                >
                 <button class="bg-btnBackground px-2 py-0 text-white rounded">
                   convert to m<sup>2</sup>
                 </button>
               </li>
               <!-- ellipse list -->
               <li class="mt-2">
-                Ellipse <span class="ml-12">0</span>cm<sup>2</sup>
+                Ellipse <span id="ellipse-area" class="ml-12">0</span>cm<sup
+                  >2</sup
+                >
                 <button class="bg-btnBackground px-2 py-0 text-white rounded">
                   convert to m<sup>2</sup>
                 </button>
@@ -204,12 +226,14 @@
             <p>Area(A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
             <div class="my-5">
               <input
+                id="rhombus-d1"
                 class="bg-inputBackground px-2 py-1 mr-2 w-20"
                 type="text"
                 placeholder="d1"
               />
               <span class="font-inter font-normal text-base">cm</span>
               <input
+                id="rhombus-d2"
                 class="bg-inputBackground px-2 py-1 mx-2 w-20"
                 type="text"
                 placeholder="d2"
@@ -218,6 +242,7 @@
             </div>
             <!-- calculate button -->
             <button
+              id="btn-rhombus"
               class="bg-btnBackground w-full px-12 py-4 font-inter text-xl font-bold text-white rounded-lg"
             >
               Calculate
@@ -232,12 +257,14 @@
             <p>Area(A) = 0.5 x p x b</p>
             <div class="my-5">
               <input
+                id="pentagon-p"
                 class="bg-inputBackground px-2 py-1 mr-2 w-20"
                 type="text"
                 placeholder="p"
               />
               <span class="font-inter font-normal text-base">cm</span>
               <input
+                id="pentagon-b"
                 class="bg-inputBackground px-2 py-1 mx-2 w-20"
                 type="text"
                 placeholder="b"
@@ -246,6 +273,7 @@
             </div>
             <!-- calculate button -->
             <button
+              id="btn-pentagon"
               class="bg-btnBackground w-full px-12 py-4 font-inter text-xl font-bold text-white rounded-lg"
             >
               Calculate
@@ -260,12 +288,14 @@
             <p>Area(A) = πab</p>
             <div class="my-5">
               <input
+                id="ellipse-a"
                 class="bg-inputBackground px-2 py-1 mr-2 w-20"
                 type="text"
                 placeholder="a"
               />
               <span class="font-inter font-normal text-base">cm</span>
               <input
+                id="ellipse-b"
                 class="bg-inputBackground px-2 py-1 mx-2 w-20"
                 type="text"
                 placeholder="b"
@@ -274,6 +304,7 @@
             </div>
             <!-- calculate button -->
             <button
+              id="btn-ellipse"
               class="bg-btnBackground w-full px-12 py-4 font-inter text-xl font-bold text-white rounded-lg"
             >
               Calculate
@@ -282,5 +313,7 @@
         </div>
       </section>
     </main>
+    <script src="js/utilities.js"></script>
+    <script src="js/calculate.js"></script>
   </body>
 </html>

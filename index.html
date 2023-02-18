@@ -36,7 +36,7 @@
     <header>
       <!-- navigation section -->
       <nav
-        class="bg-navBackground mx-12 my-10 flex justify-between items-center"
+        class="bg-navBackground md:mx-12 my-10 flex justify-between items-center"
       >
         <div class="py-4 pl-7">
           <h1 class="font-inter font-bold text-4xl">Interactive</h1>
@@ -53,12 +53,12 @@
     </header>
     <!-- main  -->
     <main>
-      <!-- section with triangle,rectangle,parallelogram and calculation area -->
-      <section class="mx-12">
-        <div class="grid grid-cols-4 gap-6">
+      <!-- section -->
+      <section class="md:mx-12 mb-10">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
           <!-- triangle div-->
           <div
-            class="border-2 flex flex-col items-center bg-triangleBg p-8 rounded-lg"
+            class="border-2 flex flex-col items-center bg-triangleBg p-8 rounded-lg order-1 md:order-1"
           >
             <img src="images/triangle.png" alt="" />
             <h3 class="font-inter font-bold text-2xl mt-8 mb-2">Triangle</h3>
@@ -85,7 +85,9 @@
             </button>
           </div>
           <!-- rectangle div -->
-          <div class="border-2 flex flex-col items-center p-8 rounded-lg">
+          <div
+            class="border-2 flex flex-col items-center p-8 rounded-lg order-2 md:order-2"
+          >
             <img src="images/rectangle.png" alt="" />
             <h3 class="font-inter font-bold text-2xl mt-14 mb-2">Rectangle</h3>
             <p>Area(A) = w x l</p>
@@ -111,14 +113,27 @@
             </button>
           </div>
           <!-- parallelogram div -->
-          <div class="border-2 flex flex-col items-center p-8 rounded-lg">
+          <div
+            class="border-2 flex flex-col items-center p-8 rounded-lg order-3 md:order-3"
+          >
             <img src="images/parallelogram.png" alt="" />
             <h3 class="font-inter font-bold text-2xl mt-20 mb-2">
               Parallelogram
             </h3>
             <p>Area(A) = b x h</p>
-            <div class="my-5 font-inter font-normal text-xl">
-              b=<span>10</span>cm, h=<span>12</span>cm
+            <div class="my-5">
+              <input
+                class="bg-inputBackground px-2 py-1 mr-2 w-20"
+                type="text"
+                placeholder="b"
+              />
+              <span class="font-inter font-normal text-base">cm</span>
+              <input
+                class="bg-inputBackground px-2 py-1 mx-2 w-20"
+                type="text"
+                placeholder="h"
+              />
+              <span class="font-inter font-normal text-base">cm</span>
             </div>
             <!-- calculate button -->
             <button
@@ -128,27 +143,78 @@
             </button>
           </div>
           <!-- area calculation -->
-          <div class="border-2 rounded-lg">
+          <div class="border-2 rounded-lg order-last md:order-4">
             <h4
               class="font-inter font-bold text-xl text-center mt-5 underline underline-offset-4"
             >
               Area Calculation
             </h4>
+            <!-- ordered list -->
+            <ol class="mt-4 w-5/6 mx-auto list-decimal list-inside">
+              <!-- triangle list -->
+              <li>
+                Triangle <span class="ml-11">0</span>cm<sup>2</sup>
+                <button class="bg-btnBackground px-2 py-0 text-white rounded">
+                  convert to m<sup>2</sup>
+                </button>
+              </li>
+              <!-- rectangle list -->
+              <li class="mt-2">
+                Rectangle <span class="ml-7">0</span>cm<sup>2</sup>
+                <button class="bg-btnBackground px-2 py-0 text-white rounded">
+                  convert to m<sup>2</sup>
+                </button>
+              </li>
+              <!-- parallelogram list -->
+              <li class="mt-2">
+                Parallelogram <span class="ml-1">0</span>cm<sup>2</sup>
+                <button class="bg-btnBackground px-2 py-0 text-white rounded">
+                  convert to m<sup>2</sup>
+                </button>
+              </li>
+              <!-- rhombus list -->
+              <li class="mt-2">
+                Rhombus <span class="ml-8">0</span>cm<sup>2</sup>
+                <button class="bg-btnBackground px-2 py-0 text-white rounded">
+                  convert to m<sup>2</sup>
+                </button>
+              </li>
+              <!-- pentagon list -->
+              <li class="mt-2">
+                Pentagon <span class="ml-8">0</span>cm<sup>2</sup>
+                <button class="bg-btnBackground px-2 py-0 text-white rounded">
+                  convert to m<sup>2</sup>
+                </button>
+              </li>
+              <!-- ellipse list -->
+              <li class="mt-2">
+                Ellipse <span class="ml-12">0</span>cm<sup>2</sup>
+                <button class="bg-btnBackground px-2 py-0 text-white rounded">
+                  convert to m<sup>2</sup>
+                </button>
+              </li>
+            </ol>
           </div>
-        </div>
-      </section>
-      <!-- section with rhombus,pentagon,ellipse -->
-      <section class="mx-12 mt-3 mb-10">
-        <div class="grid grid-cols-4 gap-6">
           <!-- rhombus div -->
           <div
-            class="border-2 flex flex-col items-center p-8 rounded-lg bg-rhombusBg"
+            class="border-2 flex flex-col items-center p-8 rounded-lg bg-rhombusBg order-4 md:order-5"
           >
             <img src="images/rhombus.png" alt="" />
             <h3 class="font-inter font-bold text-2xl mt-8 mb-2">Rhombus</h3>
             <p>Area(A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
-            <div class="my-5 font-inter font-normal text-xl">
-              d<sub>1</sub>=<span>16</span>cm, d<sub>2</sub>=<span>8</span>cm
+            <div class="my-5">
+              <input
+                class="bg-inputBackground px-2 py-1 mr-2 w-20"
+                type="text"
+                placeholder="d1"
+              />
+              <span class="font-inter font-normal text-base">cm</span>
+              <input
+                class="bg-inputBackground px-2 py-1 mx-2 w-20"
+                type="text"
+                placeholder="d2"
+              />
+              <span class="font-inter font-normal text-base">cm</span>
             </div>
             <!-- calculate button -->
             <button
@@ -158,12 +224,25 @@
             </button>
           </div>
           <!-- pentagon div -->
-          <div class="border-2 flex flex-col items-center p-8 rounded-lg">
+          <div
+            class="border-2 flex flex-col items-center p-8 rounded-lg order-5 md:order-6"
+          >
             <img src="images/pentagon.png" alt="" />
             <h3 class="font-inter font-bold text-2xl mt-10 mb-2">Pentagon</h3>
             <p>Area(A) = 0.5 x p x b</p>
-            <div class="my-5 font-inter font-normal text-xl">
-              p=<span>6</span>cm, b=<span>10</span>cm
+            <div class="my-5">
+              <input
+                class="bg-inputBackground px-2 py-1 mr-2 w-20"
+                type="text"
+                placeholder="p"
+              />
+              <span class="font-inter font-normal text-base">cm</span>
+              <input
+                class="bg-inputBackground px-2 py-1 mx-2 w-20"
+                type="text"
+                placeholder="b"
+              />
+              <span class="font-inter font-normal text-base">cm</span>
             </div>
             <!-- calculate button -->
             <button
@@ -173,12 +252,25 @@
             </button>
           </div>
           <!-- ellipse div -->
-          <div class="border-2 flex flex-col items-center p-8 rounded-lg">
+          <div
+            class="border-2 flex flex-col items-center p-8 rounded-lg order-6 md:order-7"
+          >
             <img src="images/ellipse.png" alt="" />
             <h3 class="font-inter font-bold text-2xl mt-16 mb-2">Ellipse</h3>
             <p>Area(A) = πab</p>
-            <div class="my-5 font-inter font-normal text-xl">
-              a=<span>10</span>cm, b=<span>4</span>cm
+            <div class="my-5">
+              <input
+                class="bg-inputBackground px-2 py-1 mr-2 w-20"
+                type="text"
+                placeholder="a"
+              />
+              <span class="font-inter font-normal text-base">cm</span>
+              <input
+                class="bg-inputBackground px-2 py-1 mx-2 w-20"
+                type="text"
+                placeholder="b"
+              />
+              <span class="font-inter font-normal text-base">cm</span>
             </div>
             <!-- calculate button -->
             <button

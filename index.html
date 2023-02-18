@@ -18,6 +18,9 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              navBackground: "rgba(16, 144, 216, 0.1)",
+              btnBackground: "#1090D8",
+              inputBackground: "#F1F1F1",
             },
             fontFamily: {
               inter: ["Inter", "sans-serif"],
@@ -29,7 +32,111 @@
   </head>
   <body>
     <header>
-      <nav></nav>
+      <!-- navigation section -->
+      <nav
+        class="bg-navBackground mx-12 my-10 flex justify-between items-center"
+      >
+        <div class="py-4 pl-7">
+          <h1 class="font-inter font-bold text-4xl">Interactive</h1>
+          <h4 class="font-inter font-medium text-3xl">Geometry Genius</h4>
+        </div>
+        <div class="pr-8">
+          <button
+            class="bg-btnBackground px-7 py-3 text-white font-inter text-lg font-bold rounded-md"
+          >
+            Blog
+          </button>
+        </div>
+      </nav>
     </header>
+    <!-- main  -->
+    <main>
+      <!-- section with triangle,rectangle,parallelogram and calculation area -->
+      <section class="mx-12">
+        <div class="grid grid-cols-4 gap-6">
+          <!-- triangle div-->
+          <div class="border-2 flex flex-col items-center p-8">
+            <img src="images/triangle.png" alt="" />
+            <h3 class="font-inter font-bold text-2xl mt-8 mb-2">Triangle</h3>
+            <p>Area(A) = 0.5 x b x h</p>
+            <div class="my-5">
+              <input
+                class="bg-inputBackground px-2 py-1 mr-2 w-20"
+                type="text"
+                placeholder="b"
+              />
+              <span class="font-inter font-normal text-base">cm</span>
+              <input
+                class="bg-inputBackground px-2 py-1 mx-2 w-20"
+                type="text"
+                placeholder="h"
+              />
+              <span class="font-inter font-normal text-base">cm</span>
+            </div>
+            <!-- calculate button -->
+            <button
+              class="bg-btnBackground w-full px-12 py-4 font-inter text-xl font-bold text-white rounded-lg"
+            >
+              Calculate
+            </button>
+          </div>
+          <!-- rectangle div -->
+          <div class="border-2 flex flex-col items-center p-8">
+            <img src="images/rectangle.png" alt="" />
+            <h3 class="font-inter font-bold text-2xl mt-14 mb-2">Rectangle</h3>
+            <p>Area(A) = w x l</p>
+            <div class="my-5">
+              <input
+                class="bg-inputBackground px-2 py-1 mr-2 w-20"
+                type="text"
+                placeholder="w"
+              />
+              <span class="font-inter font-normal text-base">cm</span>
+              <input
+                class="bg-inputBackground px-2 py-1 mx-2 w-20"
+                type="text"
+                placeholder="l"
+              />
+              <span class="font-inter font-normal text-base">cm</span>
+            </div>
+            <!-- calculate button -->
+            <button
+              class="bg-btnBackground w-full px-12 py-4 font-inter text-xl font-bold text-white rounded-lg"
+            >
+              Calculate
+            </button>
+          </div>
+          <!-- parallelogram div -->
+          <div class="border-2 flex flex-col items-center p-8">
+            <img src="images/parallelogram.png" alt="" />
+            <h3 class="font-inter font-bold text-2xl mt-20 mb-2">
+              Parallelogram
+            </h3>
+            <p>Area(A) = b x h</p>
+            <div class="my-5 font-inter font-normal text-xl">
+              b=<span>10</span>cm, h=<span>12</span>cm
+            </div>
+            <!-- calculate button -->
+            <button
+              class="bg-btnBackground w-full px-12 py-4 font-inter text-xl font-bold text-white rounded-lg"
+            >
+              Calculate
+            </button>
+          </div>
+          <!-- area calculation -->
+          <div class="border-2">
+            <h4
+              class="font-inter font-bold text-xl text-center mt-5 underline underline-offset-4"
+            >
+              Area Calculation
+            </h4>
+          </div>
+        </div>
+      </section>
+      <!-- section with rhombus,pentagon,ellipse -->
+      <section>
+        <div></div>
+      </section>
+    </main>
   </body>
 </html>
